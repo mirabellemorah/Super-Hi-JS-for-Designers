@@ -13,8 +13,8 @@ const pages = [
     { copy: "Life isn’t as serious as my mind makes it out to be. - Ekhart Tolle", background: "#f9a03f", circle: "#ed3e3e" },    // 2
     { copy: `A good partner should reduce the complexity and difficulty of your life, not add to it — EY on Fishbowl`, background: "#f9845b", circle: "#19d8e9" },    // 3
     { copy: `Your focus determines your reality`, background: "#A9245c", circle: "#39d8e9" },    // 4
-    { copy: `The unconscious compulsion to enhance one’s identity through association with an object is built into the very structure of the egoic mind — Eckhart Tolle`, background: "#f8345b", circle: "#00be96" },    // 5
-    { copy: `Paradoxically, what keeps the so called consumer society going is the fact that trying to find yourself through things doesn’t work: the ego satisfaction is short lived and so you keep looking for more, keep buying, keep consuming. — Eckhart Tolle`, background: "#f8ba5b", circle: "#063aad" },    // 6
+    { copy: `Do good every day`, background: "#f8345b", circle: "#00be96" },    // 5
+    { copy: `Paradoxically, what keeps the so called consumer society going is the fact that trying to find yourself through things doesn’t work — Eckhart Tolle`, background: "#f8ba5b", circle: "#063aad" },    // 6
     { copy: `Once this life is over there are no redos`, background: "#960af2", circle: "#0034ff" },    // 7
     { copy: `Whatever you appreciate appreciates. Give thanks and practice gratitude - Nat Bassey`, background: "#ab237d", circle: "#77cf96" },    // 8
     { copy: `Great value precedes great wealth. If you want to make millions impact millions. `, background: "#f9f8f0", circle: "#Ab234f" },    // 9
