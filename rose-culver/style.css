@@ -20,6 +20,7 @@ body {
     padding: 20px;
     height: 100vh;
     transition: all 0.5s;
+    overflow: hidden;
 }
 
 section {
@@ -44,7 +45,7 @@ h1 {
     color: #333;
     font-size: 25px;
     margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2 {
