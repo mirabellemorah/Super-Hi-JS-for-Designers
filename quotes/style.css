@@ -62,9 +62,25 @@ footer {
     width: 100%;
     bottom: 10%;
     left: 0;
+    cursor: pointer;
 }
 
 footer img {
     width: 20px;
     margin: 0 10px;
+    transform: scale(0.9);
+    transition: all 1s;
+}
+
+audio {
+    transition: all 1s;
+}
+
+#muteBtn {
+    transform: scale(0.9);
+    transition: all 1s;
+}
+
+#muteBtn:hover, footer img:hover {
+    transform: scale(0.7);
 }

@@ -32,6 +32,7 @@ const next = function () {
     }; // the first one does a check and if the chekc passes then it does the thing in the curly bracket
 
     updateSection();
+    player();
 }
 
 const random = () => {
@@ -78,3 +79,28 @@ document.addEventListener("keyup", (event) => {
     }
 
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("Audio");
+    const muteBtn = document.getElementById("muteBtn");
+
+    // Set volume to 30% (0.3 out of 1)
+    audio.volume = 0.3;
+
+    // Try to play audio (Some browsers require user interaction)
+    audio.play().catch(error => {
+        console.log("Autoplay prevented by browser:", error);
+    });
+
+    muteBtn.addEventListener("click", function player() {
+        if (!audio.paused) {
+            audio.pause(); // Pause the music
+            muteBtn.src = "https://img.icons8.com/?size=100&id=644&format=png&color=000000";
+        }
+
+        else {
+            audio.play(); // Resume playing
+            muteBtn.src = "https://img.icons8.com/?size=100&id=lWzUFP7UyZXx&format=png&color=000000";
+        }
+    });
+});
