@@ -43,7 +43,7 @@ section div.circle {
 
 h1 {
     color: #333;
-    font-size: 25px;
+    font-size: 23px;
     margin-bottom: 20px;
     font-weight: 500;
 }
@@ -51,7 +51,7 @@ h1 {
 h2 {
     font-size: 5vmin;
     /* 10% of the minimum (height or) viewport width of the browser*/
-    font-weight: 300;
+    font-weight: 400;
 }
 
 footer {
