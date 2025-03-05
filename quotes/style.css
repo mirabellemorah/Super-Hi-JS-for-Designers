@@ -81,15 +81,6 @@ audio {
     transition: all 1s;
 }
 
-#muteBtn:hover, footer img:hover {
+footer img:hover {
     transform: scale(0.7);
-}
-
-
-@media screen and (max-width: 620px) {
-
-    #muteBtn:hover, footer img:hover {
-        transform: scale(0.7);
-    }
-    
 }
