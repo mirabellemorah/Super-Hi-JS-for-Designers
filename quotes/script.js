@@ -108,9 +108,3 @@ muteBtn.addEventListener("click", function player() {
         muteBtn.src = "https://img.icons8.com/?size=100&id=lWzUFP7UyZXx&format=png&color=000000";
     }
 });
-
-if ("ontouchstart" in window) {
-    document.querySelectorAll("footer img, #muteBtn").forEach(el => {
-        el.style.pointerEvents = "none"; // Disables hover effect
-    });
-}
