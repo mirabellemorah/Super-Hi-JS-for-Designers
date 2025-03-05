@@ -18,6 +18,7 @@ body {
     width: 620px;
     padding: 20px;
     height: 100vh;
+    transition: all 0.5s;
 }
 
 section {
@@ -35,6 +36,7 @@ section div.circle {
     text-align: center;
     display: inline-block;
     margin-bottom: 5%;
+    transition: all 0.5s;
 }
 
 h1 {
