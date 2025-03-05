@@ -32,7 +32,6 @@ const next = function () {
     }; // the first one does a check and if the chekc passes then it does the thing in the curly bracket
 
     updateSection();
-    //player();
 }
 
 const random = () => {
