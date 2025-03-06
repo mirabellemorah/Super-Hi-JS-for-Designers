@@ -6,10 +6,10 @@ toggleTag.addEventListener("click", function () {
   mainTag.classList.toggle("open");
 
   if (mainTag.classList.contains("open")) {
-    toggleTag.innerHTML = `<img src="halimah/assets/close.svg"> Close`;
+    toggleTag.innerHTML = `<img src="./assets/close.svg"> Close`;
   }
   else {
-    toggleTag.innerHTML = `<img src="halimah/assets/menu.svg"> Menu`;
+    toggleTag.innerHTML = `<img src="./assets/menu.svg"> Menu`;
   }
 
 });
@@ -52,34 +52,33 @@ slideArea.addEventListener("mouseover", function () {
 
 slideArea.addEventListener("mouseout", function () {
   images.forEach(image => {
-  
+
     image.style.transform = ``;
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    const audio = document.getElementById("Audio");
-    const muteBtn = document.getElementById("muteBtn");
+  const audio = document.getElementById("Audio");
+  const muteBtn = document.getElementById("muteBtn");
 
-    // Set volume & start muted
-    audio.volume = 0.3;
+  // Set volume & start muted
+  audio.volume = 0.3;
 
-    //Unmute after loading
-    audio.play().catch(error => {
-        console.log("Autoplay blocked:", error);
-    });
+  //Unmute after loading
+  audio.play().catch(error => {
+    console.log("Autoplay blocked:", error);
+  });
 
-    muteBtn.addEventListener("click", function player() {
-        if (!audio.paused) {
-            audio.pause(); // Pause the music
-            muteBtn.src = "https://img.icons8.com/?size=100&id=644&format=png&color=000000";
-        }
+  muteBtn.addEventListener("click", function player() {
+    if (!audio.paused) {
+      audio.pause(); // Pause the music
+      muteBtn.src = "https://img.icons8.com/?size=100&id=644&format=png&color=000000";
+    }
 
-        else {
-            audio.play(); // Resume playing
-            muteBtn.src = "https://img.icons8.com/?size=100&id=lWzUFP7UyZXx&format=png&color=000000";
-        }
-    });
+    else {
+      audio.play(); // Resume playing
+      muteBtn.src = "https://img.icons8.com/?size=100&id=lWzUFP7UyZXx&format=png&color=000000";
+    }
+  });
 
 });
