@@ -123,6 +123,8 @@ div.slides {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: 50% 50%;
+
 }
 
 .showcase-imgs:first-child {
@@ -200,12 +202,13 @@ footer p {
         width: 100%;
     }
 
-    .slides {
+    div.slides {
         margin-top: 65px;
+        height: 400px;
     }
 
     .showcase-imgs {
-        top: 50px;
+        top: 20px;
         width: 100%;
         height: 350px;
 
