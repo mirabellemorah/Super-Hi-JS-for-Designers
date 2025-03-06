@@ -56,3 +56,30 @@ slideArea.addEventListener("mouseout", function () {
     image.style.transform = ``;
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const audio = document.getElementById("Audio");
+    const muteBtn = document.getElementById("muteBtn");
+
+    // Set volume & start muted
+    audio.volume = 0.3;
+
+    //Unmute after loading
+    audio.play().catch(error => {
+        console.log("Autoplay blocked:", error);
+    });
+
+    muteBtn.addEventListener("click", function player() {
+        if (!audio.paused) {
+            audio.pause(); // Pause the music
+            muteBtn.src = "https://img.icons8.com/?size=100&id=644&format=png&color=000000";
+        }
+
+        else {
+            audio.play(); // Resume playing
+            muteBtn.src = "https://img.icons8.com/?size=100&id=lWzUFP7UyZXx&format=png&color=000000";
+        }
+    });
+
+});
