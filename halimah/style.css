@@ -185,6 +185,7 @@ footer p {
         flex-direction: column;
         gap: 20px;
         height: max-content;
+        overflow-x: hidden;
     }
 
     section div {
