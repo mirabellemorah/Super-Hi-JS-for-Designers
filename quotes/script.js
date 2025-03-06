@@ -27,9 +27,13 @@ const pages = [
 const next = function () {
     pageNumber++; // pageNumber += 1 or pageNumber++;
 
-    if (pageNumber > pages.length - 1) {
-        pageNumber = 0;
-    }; // the first one does a check and if the chekc passes then it does the thing in the curly bracket
+    //This checks if pageNumber has gone past the last page
+
+    if (pageNumber > pages.length - 1)
+
+    // If pageNumber is greater than the last index, it resets pageNumber to 0, making it loop back to the first page. ie the first one does a check and if the check passes then it does the thing in the curly bracket
+
+    { pageNumber = 0; };
 
     updateSection();
 }
