@@ -32,7 +32,7 @@ body {
     line-height: 1.5;
     color: aliceblue;
     background-color: #282828;
-    margin: 40px 40px 40px 320px;
+    margin: 0 0 0 280px;
 }
 
 section.options {
@@ -93,7 +93,6 @@ input[type="text"]:focus {
 }
 
 textarea.output {
-
     font-size: 64px;
     width: 100%;
     min-height: 100vh;
@@ -101,6 +100,7 @@ textarea.output {
     background: none;
     border: none;
     outline: none;
+    padding: 40px;
 }
 
 input[type="range"] {
@@ -146,4 +146,27 @@ input[type="range"]::-moz-range-thumb {
 span {
     float: right;
     font-style: italic;
+}
+
+div.colors {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+
+}
+
+div.colors div {
+    width: 30px;
+    height: 30px;
+    border: solid 2px rgba(255, 255, 255, 0.121);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+div.colors div.selected {
+
+    border: solid 5px rgba(255, 255, 255, 0.986);
+
 }

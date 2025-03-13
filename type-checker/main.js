@@ -20,6 +20,8 @@ const typefaceTag = document.querySelector(`select[name="typeface"]`);
 const color = document.querySelector(`input[name="base"]`);
 const body = document.querySelector("body");
 
+const colorTag = document.querySelectorAll("div.colors div");
+
 //when I type in my sentence, I want to see the sentence in the output
 //add an event listener
 //why innerHTML does not work is because there is no HTML but rather a value is what is updated
@@ -84,4 +86,27 @@ boldTag.addEventListener("change", function () {
 
 color.addEventListener("input", function () {
     body.style.backgroundColor = this.value;
+});
+
+//go through all of my color tags
+// then when I click one of them, change the background color
+//and change the text color
+//and make teh tag selected
+
+colorTag.forEach(colorBox => {
+
+    colorBox.addEventListener("click", function () {
+
+        outputTag.style.backgroundColor = this.style.backgroundColor;
+        outputTag.style.color = this.style.color;
+
+        //reset the classes
+
+        colorTag.forEach(colorBox => {
+            colorBox.classList.remove("selected");
+        });
+
+        this.classList.add("selected");
+    }) //this is because you cant add an event listener to all things 1-1 but you can do it by looping through each
+
 });
