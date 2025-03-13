@@ -190,7 +190,7 @@ div.colors div.selected {
     }
 
     div.option {
-        margin-top: 30px;
+        margin-top: 5px;
     }
 
     label {
@@ -206,7 +206,7 @@ div.colors div.selected {
 
     textarea.output {
         font-size: 35px;
-        padding: 20px;
+        padding: 40px;
     }
 
     input[type="range"] {
@@ -239,15 +239,14 @@ div.colors div.selected {
     }
 
     div.colors {
-
         flex-wrap: wrap;
-        margin-top: 30px;
+        margin-top: 10px;
         justify-content: center;
     }
 
     div.colors div {
 
-        margin-bottom: 20px;
+        margin-bottom: 5px;
 
     }
 
