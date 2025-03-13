@@ -17,6 +17,9 @@ const boldTag = document.querySelector(`input[name="bold"]`);
 
 const typefaceTag = document.querySelector(`select[name="typeface"]`);
 
+const color = document.querySelector(`input[name="base"]`);
+const body = document.querySelector("body");
+
 //when I type in my sentence, I want to see the sentence in the output
 //add an event listener
 //why innerHTML does not work is because there is no HTML but rather a value is what is updated
@@ -76,7 +79,9 @@ typefaceTag.addEventListener("input", function () {
 });
 
 boldTag.addEventListener("change", function () {
-
     boldTag.checked ? outputTag.style.fontWeight = "bold" : outputTag.style.fontWeight = "normal";
+});
 
+color.addEventListener("input", function () {
+    body.style.backgroundColor = this.value;
 });

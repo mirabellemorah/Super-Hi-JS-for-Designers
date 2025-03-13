@@ -80,7 +80,7 @@ input[type="text"] {
     width: 100%;
     padding: 0.5em;
     font-size: 1em;
-    background-color: #575757;
+    background-color: rgba(87, 87, 87, 0.153);
     border: none;
     color: aliceblue;
     /* Green outline */
