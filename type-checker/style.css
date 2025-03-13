@@ -146,13 +146,13 @@ input[type="range"]::-moz-range-thumb {
 span {
     float: right;
     font-style: italic;
+    font-size: 10px;
 }
 
 div.colors {
     display: flex;
     text-align: center;
     justify-content: space-between;
-
 }
 
 div.colors div {
@@ -194,6 +194,7 @@ div.colors div.selected {
 
     label {
         display: block;
+        text-align: center;
         font-size: 12px;
         margin-bottom: 0.5em;
     }
