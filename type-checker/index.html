@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>type-check</title>
+    <link rel="stylesheet" href="_base.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="options">
+
+        <h1>
+            Type checker
+        </h1>
+
+        <div class="option">
+
+            <label for="input"> Enter a sentence: </label>
+
+            <input type="text" name="input" id="input" placeholder="The quick brown fox jumps over the lazy dog">
+
+        </div>
+
+        <div class="option">
+
+            <label>Typeface</label>
+
+            <select name="typeface">
+
+                <option value="Faune">Faune</option>
+                <option value="Open Sans">Open Sans</option>
+                <option value="Big Shoulders">Big Shoulders</option>
+                <option value="Noto Sans Korean">Noto Sans Korean</option>
+                <option value="Doto">Doto</option>
+
+            </select>
+
+        </div>
+
+        <div class="option">
+            <label for="typesize">Type size <span class="typesize-output">64px</span> </label>
+
+            <input type="range" name="typesize" id="type-size" min="10" max="100" value="16">
+
+        </div>
+
+        <div class="option">
+            <label for="lineHeight">Leading <span class="lineheight-output">1.5</span> </label>
+
+            <input type="range" name="lineHeight" min="0.5" max="1.7" value="1.5" step="0.1">
+
+        </div>
+
+        <div class="option checkbox">
+            <label for="italic">Italic</label>
+            <input type="checkbox" name="italic">
+        </div>
+
+        <div class="option checkbox">
+            <label for="bold">Bold</label>
+            <input type="checkbox" name="bold">
+        </div>
+
+    </section>
+
+    <textarea class="output">The quick brown fox jumps over the lazy dog </textarea>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
