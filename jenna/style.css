@@ -17,3 +17,67 @@ header {
     z-index: 10;
 }
 
+section {
+    background-color: #080B21;
+    min-height: 100vh;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.content {
+    position: relative;
+}
+
+div.content img {
+    position: relative;
+}
+
+div.square {
+    width: 100px;
+    height: 100px;
+    background-color: #D7AA9A;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+div.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #3F749B;
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+    border-radius: 50%;
+
+}
+
+section.s2 {
+    background-color: #626B88;
+    min-height: 100vh;
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+section.s2 div.square {
+    width: 100px;
+    height: 100px;
+    background-color: #dad4dc;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+section.s2 div.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #DEBE37;
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+}
