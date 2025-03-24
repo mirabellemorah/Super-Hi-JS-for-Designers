@@ -10,6 +10,16 @@ body {
     color: #333;
 }
 
+div.progress {
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: #dad4dc;
+    height: 2px;
+    position: fixed;
+    z-index: 2;
+}
+
 header {
     position: fixed;
     top: 36px;
