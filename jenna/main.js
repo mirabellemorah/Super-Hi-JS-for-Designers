@@ -8,7 +8,7 @@ const sections = [
     { class: "s1", background: "#ff4d4d", default: "" },
     { class: "s2", background: "#4d79ff", default: "" },
     { class: "s3", background: "#4dff88", default: "" },
-    { class: "s4", background: "#282828", default: "" }
+    { class: "s4", background: "#f9f8f0", default: "" }
 ];
 const sectionAll = document.querySelectorAll("section");
 
