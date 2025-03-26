@@ -59,10 +59,10 @@ document.addEventListener("scroll", () => {
 
     const pixels = window.pageYOffset;
 
-    sectionAll.forEach(sectiona => {
-        if (sectiona.offsetTop < pixels) {
-            clientTag.innerHTML = "test123";
-            pageTag.innerHTML = "1/4";
+    sectionAll.forEach(section => {
+        if (section.offsetTop <= pixels) {
+            clientTag.innerHTML = section.getAttribute("data-client");
+            pageTag.innerHTML = section.getAttribute("data-page");
         }
     });
 });
