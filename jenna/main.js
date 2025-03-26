@@ -63,6 +63,15 @@ document.addEventListener("scroll", () => {
         if (section.offsetTop <= pixels) {
             clientTag.innerHTML = section.getAttribute("data-client");
             pageTag.innerHTML = section.getAttribute("data-page");
+
+            if (section.hasAttribute("data-dark")) {
+                bodyTag.classList.add("white");
+            }
+
+            else {
+                bodyTag.classList.remove("white")
+            }
+
         }
     });
 });
