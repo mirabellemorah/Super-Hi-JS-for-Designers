@@ -71,7 +71,14 @@ document.addEventListener("scroll", () => {
             else {
                 bodyTag.classList.remove("white")
             }
-
         }
     });
+});
+
+document.addEventListener("scroll", () => {
+
+    const topViewport = window.pageYOffset;
+    const midViewport = topViewport + (window.innerHeight / 2);
+
+
 });
