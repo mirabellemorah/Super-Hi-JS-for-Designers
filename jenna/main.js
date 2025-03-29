@@ -75,10 +75,23 @@ document.addEventListener("scroll", () => {
     });
 });
 
-document.addEventListener("scroll", () => {
+//when we scroll a page make thinngs parallex
+//we want to make cetian anchor tags based on where we are in the page
 
+document.addEventListener("scroll", () => {
     const topViewport = window.pageYOffset;
     const midViewport = topViewport + (window.innerHeight / 2);
 
+    sectionAll.forEach(section => { // Fixed typo: Changed forEarch to forEach
+        const topSection = section.offsetTop;
+        const midSection = topSection + (section.offsetHeight / 2);
 
+        const distanceMoved = midViewport - midSection;
+
+        const tag = section.querySelector("div.square");
+
+        tag.style.transform = `translateY(${distanceMoved * 0.25}px)`;
+
+
+    });
 });
