@@ -82,16 +82,18 @@ document.addEventListener("scroll", () => {
     const topViewport = window.pageYOffset;
     const midViewport = topViewport + (window.innerHeight / 2);
 
-    sectionAll.forEach(section => { // Fixed typo: Changed forEarch to forEach
+    sectionAll.forEach(section => {
         const topSection = section.offsetTop;
         const midSection = topSection + (section.offsetHeight / 2);
 
         const distanceMoved = midViewport - midSection;
 
-        const tag = section.querySelector("div.square");
+        // Use section.querySelectorAll to scope the search to the current section
+        const parallexTags = section.querySelectorAll(`[data-parallex]`);
 
-        tag.style.transform = `translateY(${distanceMoved * 0.25}px)`;
-
-
+        parallexTags.forEach(tag => {
+            const speed = parseFloat(tag.getAttribute("data-parallex"));
+            tag.style.transform = `translateY(${distanceMoved * speed}px)`;
+        });
     });
 });
