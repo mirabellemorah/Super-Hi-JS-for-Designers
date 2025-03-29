@@ -112,3 +112,28 @@ section.s4 div.square {
 section.s4 div.circle {
     background-color: #fffef8;
 }
+
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+    
+  h1 {
+        font-size: 21px;
+    }
+  }
+
+    section {
+        min-height: 70vh;
+        padding: 40px;
+        overflow-x: hidden;
+    }
+    
+    div.content {
+        position: relative;
+    }
+    
+    div.content img {
+        position: relative;
+    }
