@@ -81,6 +81,10 @@ div.circle {
     border-radius: 50%;
 }
 
+section {
+    height: 100vh;
+}
+
 section.s2 {
     background-color: #626B88;
 }
@@ -118,22 +122,22 @@ section.s4 div.circle {
     body {
         font-size: 18px;
     }
-    
-  h1 {
+
+    h1 {
         font-size: 21px;
     }
-  }
+}
 
-    section {
-        min-height: 70vh;
-        padding: 40px;
-        overflow-x: hidden;
-    }
-    
-    div.content {
-        position: relative;
-    }
-    
-    div.content img {
-        position: relative;
-    }
+section {
+    min-height: 70vh;
+    padding: 40px;
+    overflow-x: hidden;
+}
+
+div.content {
+    position: relative;
+}
+
+div.content img {
+    position: relative;
+}
