@@ -164,7 +164,7 @@ section {
         transition: all 0.5s ease;
     }
 
-      .hero::after {
+    .hero::after {
         content: '';
         position: absolute;
         width: 100%;
