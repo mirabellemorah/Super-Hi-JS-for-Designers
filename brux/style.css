@@ -1,1 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background: white;
+    color: #052837;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    margin-right: 10px;
+}
+
+header nav {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+    background-color: #c7f2f1;
+}
+
+a {
+    text-decoration: none;
+    color: #062837;
+}
+
+header nav a {
+    margin-left: 18px;
+}
+
+.hero {
+    display: flex;
+    background-color: #c7f2f1;
+    height: 80vh;
+    background-image: url(assets/hero.jpg);
+    background-position: center right;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding: 160px 45px;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+
+.hero-text {
+    max-width: 480px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    Line-height: 1.25
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    Line-height: 1.25
+}
+
+section {
+    padding: 20px 45px;
+}
