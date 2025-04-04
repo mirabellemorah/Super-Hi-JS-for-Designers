@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+/* ========== Base Styles ========== */
 body {
     font-family: 'Rubik', sans-serif;
     background: white;
@@ -9,6 +10,29 @@ body {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+    color: #062837;
+}
+
+/* ========== Header & Nav ========== */
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 45px;
+    background-color: #c7f2f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header nav a {
+    margin-left: 18px;
+}
+
 .logo {
     font-size: 24px;
     font-weight: 900;
@@ -16,69 +40,45 @@ body {
     margin-right: 10px;
 }
 
-header nav {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 45px;
-    background-color: #c7f2f1;
-}
-
-a {
-    text-decoration: none;
-    color: #062837;
-}
-
-header nav a {
-    margin-left: 18px;
-}
-
+/* ========== Hero Section ========== */
 .hero {
     display: flex;
-    background-color: #c7f2f1;
-    height: 85vh;
-    background-image: url(assets/hero.jpg);
-    background-position: center right;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
     align-items: center;
-    margin: 80px 0 0 0;
+    height: 85vh;
+    margin-top: 80px;
+    background: #c7f2f1 url(assets/hero.jpg) no-repeat center right;
+    background-size: auto 100%;
 }
 
 .hero-text {
     max-width: 480px;
-    gap: 30px;
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
 
+/* ========== Headings ========== */
 h2 {
     font-size: 48px;
     font-weight: 500;
-    Line-height: 1.25
+    line-height: 1.25;
 }
 
 h3 {
     font-size: 32px;
     font-weight: 500;
-    Line-height: 1.25
+    line-height: 1.25;
+    margin-bottom: 30px;
 }
 
-section {
-    padding: 20px 45px;
-}
-
+/* ========== Buttons ========== */
 .btn {
     background-color: #062837;
-    width: max-content;
     color: white;
+    font-size: 18px;
     padding: 10px 20px;
     border-radius: 50px;
-    font-size: 18px;
+    width: max-content;
     text-align: center;
     transition: all 0.3s ease;
 }
@@ -86,4 +86,118 @@ section {
 .btn:hover {
     background-color: #79eae8;
     color: #062837;
+}
+
+/* ========== Sections ========== */
+section {
+    padding: 20px 45px;
+    margin: 40px 0;
+    height: 80vh;
+}
+
+/* ========== Section 2 Layout ========== */
+.s2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.side-text {
+    width: 30vw;
+}
+
+.large-image {
+    width: 60vw;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.large-image.li2 {
+    background-image: url(assets/image2.jpg);
+}
+
+.large-image:not(.li2) {
+    background-image: url(assets/image1.jpg);
+}
+
+
+/* ========== TABLET ========== */
+@media (max-width: 900px) {
+    header nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header nav a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+}
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .hero {
+        text-align: left;
+        margin-top: 160px;
+        height: 70vh;
+        justify-content: center;
+        transition: all 0.5s ease;
+    }
+
+      .hero::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        background-color: ;
+        backdrop-filter: blur(30px);
+    }
+
+
+    .hero-text {
+        gap: 20px;
+        z-index: 3;
+        color: white;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .s2 {
+        gap: 20px;
+    }
 }
