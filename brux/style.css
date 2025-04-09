@@ -122,12 +122,14 @@ section {
     background-image: url(assets/image1.jpg);
 }
 
+/* section.contet:nth-child(odd) {
+flex-direction: row-reverse; */
 
 /* ========== TABLET ========== */
 @media (max-width: 900px) {
     header nav {
         padding: 20px;
-        flex-direction: column;
+        flex-direction: row;
         gap: 10px;
     }
 
@@ -156,6 +158,12 @@ section {
         font-size: 16px;
     }
 
+    header nav {
+   
+        flex-direction: column;
+    
+    }
+
     .hero {
         text-align: left;
         margin-top: 160px;
@@ -169,7 +177,6 @@ section {
         position: absolute;
         width: 100%;
         height: inherit;
-        background-color: ;
         backdrop-filter: blur(30px);
     }
 
