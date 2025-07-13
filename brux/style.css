@@ -1,210 +1,242 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* ========== Base Styles ========== */
 body {
-    font-family: 'Rubik', sans-serif;
-    background: white;
-    color: #052837;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.5;
+  font-family: "Rubik", sans-serif;
+  background: white;
+  color: #052837;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
 }
 
 a {
-    text-decoration: none;
-    color: #062837;
+  text-decoration: none;
+  color: #062837;
 }
 
 /* ========== Header & Nav ========== */
+
+header nav.hScrolled {
+  background-color: #79eae8;
+  transition: background-color 0.3s ease;
+}
+
 header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 45px;
-    background-color: #c7f2f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 45px;
+  background-color: #c7f2f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.9s ease-in-out;
 }
 
 header nav a {
-    margin-left: 18px;
+  margin-left: 18px;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: 900;
-    font-style: italic;
-    margin-right: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+  margin-right: 10px;
 }
 
 /* ========== Hero Section ========== */
 .hero {
-    display: flex;
-    align-items: center;
-    height: 85vh;
-    margin-top: 80px;
-    background: #c7f2f1 url(assets/hero.jpg) no-repeat center right;
-    background-size: auto 100%;
+  display: flex;
+  align-items: center;
+  height: 85vh;
+  margin-top: 80px;
+  background: #c7f2f1 url(assets/hero.jpg) no-repeat center right;
+  background-size: auto 100%;
 }
 
 .hero-text {
-    max-width: 480px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 /* ========== Headings ========== */
 h2 {
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 1.25;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.25;
 }
 
 h3 {
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 1.25;
-    margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-bottom: 30px;
 }
 
 /* ========== Buttons ========== */
 .btn {
-    background-color: #062837;
-    color: white;
-    font-size: 18px;
-    padding: 10px 20px;
-    border-radius: 50px;
-    width: max-content;
-    text-align: center;
-    transition: all 0.3s ease;
+  background-color: #062837;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  width: max-content;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .btn:hover {
-    background-color: #79eae8;
-    color: #062837;
+  background-color: #79eae8;
+  color: #062837;
 }
 
 /* ========== Sections ========== */
 section {
-    padding: 20px 45px;
-    margin: 40px 0;
-    height: 80vh;
+  padding: 20px 45px;
+  margin: 40px 0;
+  height: 80vh;
 }
 
 /* ========== Section 2 Layout ========== */
 .s2 {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .side-text {
-    width: 30vw;
+  width: 30vw;
 }
 
 .large-image {
-    width: 60vw;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+  width: 60vw;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .large-image.li2 {
-    background-image: url(assets/image2.jpg);
+  background-image: url(assets/image2.jpg);
 }
 
 .large-image:not(.li2) {
-    background-image: url(assets/image1.jpg);
+  background-image: url(assets/image1.jpg);
 }
 
-/* section.contet:nth-child(odd) {
+/* section.content:nth-child(odd) {
 flex-direction: row-reverse; */
 
 /* ========== TABLET ========== */
 @media (max-width: 900px) {
-    header nav {
-        padding: 20px;
-        flex-direction: row;
-        gap: 10px;
-    }
+  header nav {
+    padding: 20px;
+    flex-direction: row;
+    gap: 10px;
+  }
 
-    header nav a {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+  header nav a {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-top: 10px;
+  }
 
-    h2 {
-        font-size: 36px;
-    }
+  h2 {
+    font-size: 36px;
+  }
 
-    h3 {
-        font-size: 24px;
-    }
+  h3 {
+    font-size: 24px;
+  }
 
-    .btn {
-        font-size: 16px;
-    }
+  .btn {
+    font-size: 16px;
+  }
 }
 
 /* ========== MOBILE ========== */
 
 @media (max-width: 600px) {
-    body {
-        font-size: 16px;
-    }
+  body {
+    font-size: 16px;
+  }
 
-    header nav {
-   
-        flex-direction: column;
-    
-    }
+  header nav {
+    flex-direction: row;
+    position: relative;
+  }
 
-    .hero {
-        text-align: left;
-        margin-top: 160px;
-        height: 70vh;
-        justify-content: center;
-        transition: all 0.5s ease;
-    }
+  section {
+    padding: 20px 20px;
+    margin: 10px 0;
+    height: 80vh;
+  }
+  .hero {
+    text-align: left;
+    margin-top: 0px;
+    transition: all 0.5s ease;
+    height: 70vh;
+    justify-content: center;
+    transition: all 0.5s ease;
+  }
 
-    .hero::after {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: inherit;
-        backdrop-filter: blur(30px);
-    }
+  .hero::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    backdrop-filter: blur(30px);
+  }
 
+  .hero-text {
+    gap: 20px;
+    z-index: 3;
+    color: white;
+  }
 
-    .hero-text {
-        gap: 20px;
-        z-index: 3;
-        color: white;
-    }
+  .logo {
+    font-size: 20px;
+  }
 
-    .logo {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 28px;
+  }
 
-    h2 {
-        font-size: 28px;
-    }
+  h3 {
+    font-size: 20px;
+  }
 
-    h3 {
-        font-size: 20px;
-    }
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 
-    .btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+  .s2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
 
-    .s2 {
-        gap: 20px;
-    }
+.side-text {
+  width: 100%;
+}
+
+.large-image {
+  width: 100%;
+  height: 100%;
 }
