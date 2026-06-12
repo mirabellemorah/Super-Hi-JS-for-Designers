@@ -1,4 +1,4 @@
-const animatedTags = document.querySelectorAll("h2, h3, p, section img, a.button")
+/* const animatedTags = document.querySelectorAll("h2, h3, p, section img, a.button")
 
 // fade out on load
 animatedTags.forEach(tag => {
@@ -36,3 +36,7 @@ document.addEventListener("scroll", function () {
 window.addEventListener("resize", function () {
   fadeIn()
 })
+
+
+*/
+

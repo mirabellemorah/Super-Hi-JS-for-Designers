@@ -56,17 +56,17 @@ div.iris div {
 
 .scroll-indicator {
   position: fixed;
-  top: 10px;
+  bottom: 10px;
   right: 10px;
   background-color: #062837;
-  color: white;
+  color: gray;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
   z-index: 101;
 }
 
-header nav.hScrolled {
+header nav.Scrolled {
   background-color: #79eae8;
   transition: background-color 0.3s ease;
 }

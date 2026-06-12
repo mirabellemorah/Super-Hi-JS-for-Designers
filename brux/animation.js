@@ -1,42 +1,3 @@
-const animatedTags = document.querySelectorAll("h2, h3, p, .large-image");
-
-// fade out on load
-animatedTags.forEach((tag) => {
-  tag.style.opacity = 0;
-});
-
-const fadeIn = function () {
-  // look through all the animated tags and see
-  // with the getBoundingClientRect if it's in the window
-  let delay = 0.25;
-
-  animatedTags.forEach((tag) => {
-    const tagTop = tag.getBoundingClientRect().top;
-    const tagBottom = tag.getBoundingClientRect().bottom;
-
-    if (tagTop < window.innerHeight && tagBottom > 0) {
-      tag.style.animation = `fadein 1s ${delay}s both`;
-      delay = delay + 0.25;
-    } else {
-      tag.style.opacity = 0;
-      tag.style.animation = "";
-    }
-  });
-};
-
-// on load, run fadeIn
-fadeIn();
-
-// on scroll, run fadeIn
-document.addEventListener("scroll", function () {
-  fadeIn();
-});
-
-// on browser resize, run fadeIn
-window.addEventListener("resize", function () {
-  fadeIn();
-});
-
 /*const fadeIn = function () {
   const pixelsFromTop = window.pageYOffset;
   const vh = window.innerHeight * 0.5; // this is 50vh in pixels
@@ -67,3 +28,41 @@ window.addEventListener("resize", (e) => {
   toggleHeader();
 });
 */
+
+const animatedTags = document.querySelectorAll(
+  "h2, h3, p, .large-image, a.button",
+);
+
+//fadout on load
+animatedTags.forEach((tag) => {
+  tag.style.opacity = 0;
+});
+
+//fadein on load
+
+const fadeIn = function () {
+  let delay = 0.25;
+
+  animatedTags.forEach((tag) => {
+    const getTop = tag.getBoundingClientRect().top;
+    const getBottom = tag.getBoundingClientRect().bottom;
+
+    if (getTop < window.innerHeight && getBottom > 0) {
+      tag.style.animation = `fadein 1s ${delay}s both`;
+      delay += 0.25;
+    } else {
+      tag.style.opacity = 0;
+      tag.style.animation = "";
+    }
+  });
+};
+
+fadeIn();
+
+document.addEventListener("scroll", function () {
+  fadeIn();
+});
+
+window.addEventListener("resize", function () {
+  fadeIn();
+});

@@ -40,6 +40,7 @@ function toggleHeader() {
 
   headerTag.style.backgroundColor = colors[colorIndex];
   scrollIndicator.style.backgroundColor = colors[colorIndex];
+  scrollIndicator.style.color = "gray";
   headerTag.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
   scrollIndicator.style.transition = "all 0.9s ease-in-out";
 }
