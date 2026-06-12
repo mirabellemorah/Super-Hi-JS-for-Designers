@@ -24,6 +24,34 @@ a {
   color: #062837;
 }
 
+/* ========== Iris ========== */
+
+div.face {
+  position: relative;
+}
+
+div.iris {
+  position: absolute;
+  left: 11px;
+  transition: all 0.3s ease;
+}
+
+div.iris-right {
+  left: 49px;
+  /* transform: translateX(50%); */
+}
+
+div.iris div {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #062837;
+  transform: translate(-50%, -50%);
+}
+
 /* ========== Header & Nav ========== */
 
 header nav.hScrolled {
@@ -39,14 +67,31 @@ header nav {
   padding: 10px 45px;
   background-color: #c7f2f1;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   z-index: 100;
   transition: all 0.9s ease-in-out;
 }
 
 header nav a {
   margin-left: 18px;
+}
+
+.logo,
+.face,
+.menu {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  justify-content: flex-start;
+}
+
+.menu {
+  justify-content: flex-end;
 }
 
 .logo {
@@ -151,8 +196,8 @@ flex-direction: row-reverse; */
 
   header nav a {
     font-size: 12px;
-    margin-left: 5px;
     margin-top: 10px;
+    margin-left: 15px;
   }
 
   h2 {
@@ -176,8 +221,13 @@ flex-direction: row-reverse; */
   }
 
   header nav {
-    flex-direction: row;
+    flex-direction: column;
     position: relative;
+    gap: 0px;
+  }
+
+  header nav a {
+    margin-left: clamp(7px, 2vw, 20px);
   }
 
   section {
@@ -206,10 +256,6 @@ flex-direction: row-reverse; */
     gap: 20px;
     z-index: 3;
     color: white;
-  }
-
-  .logo {
-    font-size: 20px;
   }
 
   h2 {
