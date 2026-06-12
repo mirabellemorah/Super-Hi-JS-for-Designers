@@ -54,6 +54,18 @@ div.iris div {
 
 /* ========== Header & Nav ========== */
 
+.scroll-indicator {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #062837;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  z-index: 101;
+}
+
 header nav.hScrolled {
   background-color: #79eae8;
   transition: background-color 0.3s ease;
@@ -70,7 +82,7 @@ header nav {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
-  transition: all 0.9s ease-in-out;
+  transition: all 0.9s ease;
 }
 
 header nav a {
@@ -238,7 +250,6 @@ flex-direction: row-reverse; */
   .hero {
     text-align: left;
     margin-top: 0px;
-    transition: all 0.5s ease;
     height: 70vh;
     justify-content: center;
     transition: all 0.5s ease;
